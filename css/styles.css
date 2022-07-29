@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.descuentos {
+    height: 30px;
+    background: #1cd1b0;
+    padding: 5px;
+    font-size: 15px;
+}
+
+header{
+    background: #00669f;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+#cards_heroes {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    height: calc(100vh - 147px);
+}
+
+#cards_heroes .card {
+    margin-bottom: 260px !important;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+#cards_heroes .card .img img {
+    width: 200px;
+    height: 150px;
+    border-radius: 20px;
+}
+
+#cards_heroes .card .img i {
+    font-size: 30px;
+    position: absolute;
+    left: 10%;
+    margin-top: 15px;
+}
+
+#cards_heroes .card .img_heroe {
+    position: relative;
+    top: -70px;
+    left: 50px;
+}
+
+#cards_heroes .card .img_heroe img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+#cards_heroes .card .titulo {
+    position: absolute;
+    width: 200px;
+    left: 0;
+    background: #F3F3F3;
+    margin-top: -21px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.titulo h2 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.titulo a {
+    padding: 10px;
+    background: #00669F;
+    color: #000;
+    text-decoration: none;
+    margin-left: 55px;
+    position: relative;
+    top: 20px;
+}
+
+.titulo p {
+    font-size: 13px;
+    width: 200px;
+    padding: 10px;
+}
+
+footer {
+    padding: 10px;
+    background: #00669F;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 630px) {
+    #cards_heroes {
+        height: inherit;
+    }
+    #cards_heroes .card {
+        margin-bottom: 164px;
+        position: relative;
+        margin-top: 50px;
+        margin-left: 10px;
+    }
+}
